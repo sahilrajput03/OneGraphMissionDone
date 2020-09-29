@@ -1,0 +1,11 @@
+.graphiql-container {
+  height: 100vh;
+  width: 100vw;
+}
+button,
+.inputSubmitButton {
+  margin: 4px;
+  padding: 4px;
+  border-radius: 15px;
+  outline: none;
+}
