@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/graphiql-explorer-example/static/css/main.2bed791d.chunk.css",
+    "main.js": "/graphiql-explorer-example/static/js/main.29f03125.chunk.js",
+    "main.js.map": "/graphiql-explorer-example/static/js/main.29f03125.chunk.js.map",
+    "runtime-main.js": "/graphiql-explorer-example/static/js/runtime-main.9d23d7e2.js",
+    "runtime-main.js.map": "/graphiql-explorer-example/static/js/runtime-main.9d23d7e2.js.map",
+    "static/css/2.712d94b7.chunk.css": "/graphiql-explorer-example/static/css/2.712d94b7.chunk.css",
+    "static/js/2.641b756d.chunk.js": "/graphiql-explorer-example/static/js/2.641b756d.chunk.js",
+    "static/js/2.641b756d.chunk.js.map": "/graphiql-explorer-example/static/js/2.641b756d.chunk.js.map",
+    "index.html": "/graphiql-explorer-example/index.html",
+    "precache-manifest.c69114dbdff26be2f5012b60740abb9b.js": "/graphiql-explorer-example/precache-manifest.c69114dbdff26be2f5012b60740abb9b.js",
+    "service-worker.js": "/graphiql-explorer-example/service-worker.js",
+    "static/css/2.712d94b7.chunk.css.map": "/graphiql-explorer-example/static/css/2.712d94b7.chunk.css.map",
+    "static/css/main.2bed791d.chunk.css.map": "/graphiql-explorer-example/static/css/main.2bed791d.chunk.css.map",
+    "static/js/2.641b756d.chunk.js.LICENSE.txt": "/graphiql-explorer-example/static/js/2.641b756d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d23d7e2.js",
+    "static/css/2.712d94b7.chunk.css",
+    "static/js/2.641b756d.chunk.js",
+    "static/css/main.2bed791d.chunk.css",
+    "static/js/main.29f03125.chunk.js"
+  ]
+}
