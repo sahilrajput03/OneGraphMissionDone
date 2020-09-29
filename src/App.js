@@ -13,7 +13,8 @@ import { DEFAULT_QUERY } from "./DefaultQueries";
 import type { GraphQLSchema } from "graphql";
 
 let retrivedObject = localStorage.getItem("testObject");
-let { urlValue } = JSON.parse(retrivedObject);
+let testObject = JSON.parse(retrivedObject);
+let urlValue = testObject?.urlValue;
 
 const initialUrl = "https://my-graphqlmiddleware.glitch.me/graphql";
 // const initialUrl = "https://my-graphqlmiddleware.glitch.me/graphql";
