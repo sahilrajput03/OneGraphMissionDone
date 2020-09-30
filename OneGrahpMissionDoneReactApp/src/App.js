@@ -16,7 +16,8 @@ let retrivedObject = localStorage.getItem("testObject");
 let testObject = JSON.parse(retrivedObject);
 let urlValue = testObject?.urlValue;
 
-const initialUrl = "https://my-graphqlmiddleware.glitch.me/graphql";
+const initialUrl = "https://api.react-finland.fi/graphql";
+// const initialUrl = "https://my-graphqlmiddleware.glitch.me/graphql";
 // const initialUrl = "https://my-graphqlmiddleware.glitch.me/graphql";
 
 const defaultUrl = urlValue || initialUrl;
@@ -174,7 +175,14 @@ class App extends Component<{}, State> {
   render() {
     const { query, schema } = this.state;
     return (
-      <div>
+      <div class="mainContainer">
+        <div className="websiteTitle">
+          <a href="https://abstraction.ml">Abstraction.ml</a>
+        </div>
+        <h1>Querying Graphql @ <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{defaultUrl}</h1>
+        <strong>Tip: Scroll page, to see options to change graphql endpoint url, or use some public graphql api.</strong>
+        <br/>
+        <br/>
         <div className="graphiql-container">
           <GraphiQLExplorer
             schema={schema}
@@ -216,24 +224,26 @@ class App extends Component<{}, State> {
         </div>
         <form onSubmit={this.handleSubmit}>
           <label>
-            Graphql Endpoint Url:
+            <h1>Use any Graphql Endpoint Url</h1>
             <input
+              className="myGraphqlInputSahil"
               type="text"
               value={this.state.inputTextValue}
               onChange={this.handleChange}
             />
           </label>
-          <strong>
+          {/* <strong> This button is redundant, coz I can just use `Enter` key submit.
             <input
               class="inputSubmitButton"
               type="submit"
               value="Update graphiql's environment"
             />
-          </strong>
-          Tip: You can press Enter to upate too.
+          </strong> */}
+          <br/>
+          <strong>😆Tip: Press `Enter` key to update OneGrahph 😆 </strong>
         </form>
         <button
-          /* are you .......... */
+        className="resetButton"
           onClick={() => {
             localStorage.setItem(
               "testObject",
@@ -244,9 +254,54 @@ class App extends Component<{}, State> {
         >
           Reset App
         </button>
-      </div>
+        <br/>
+        <strong>Tip: To use with your locally running graphQL server, either choose ``http://localhost:5000/graphql`` from the list below or enter your endpoint url manually.</strong>
+        <br/>
+        <h1>Choose any public graphql api from below -</h1>
+        <strong>😇Tip: Click to the url itself, to use it.😇</strong><br/>
+        <UsePublicGraphql url="http://localhost:5000/graphql" />
+        <UsePublicGraphql url="https://www.graphqlapptest.ml/graphql" />
+        <UsePublicGraphql url="https://countries.trevorblades.com/" />
+        <UsePublicGraphql url="https://countries-274616.ew.r.appspot.com/" />
+        <UsePublicGraphql url="https://api.travelgatex.com/" />
+        <UsePublicGraphql url="https://api.react-finland.fi/graphql" />
+        <UsePublicGraphql url="https://api.graphql.jobs/" />
+        <UsePublicGraphql url="https://etmdb.com/graphql" />
+        <UsePublicGraphql url="https://graphbrainz.herokuapp.com/" />
+        <UsePublicGraphql url="https://graphql-camara-deputados.herokuapp.com/" />
+        <UsePublicGraphql url="https://api.spacex.land/graphql/" />
+        <UsePublicGraphql url="https://graphql-compose.herokuapp.com/northwind/" />
+        <UsePublicGraphql url="https://directions-graphql.herokuapp.com/graphql" />
+        <UsePublicGraphql url="https://rickandmortyapi.com/graphql" />
+        <UsePublicGraphql url="https://graphql-weather-api.herokuapp.com/" />
+      {/* <UsePublicGraphql url="" /> */}
+      <hr/>
+      Created by <a href="https://twitter.com/freakstarrocks">Sahil Rajput</a>
+      <br/>
+      Resources used: <a href="https://github.com/OneGraph/graphiql-explorer-example">One Graph's Client</a>
+      
+          
+  </div>
     );
   }
+}
+
+const UsePublicGraphql = ({url}) => {
+
+  return (
+    <button class="UsePublicGraphql"
+    onClick={() => {
+      localStorage.setItem(
+        "testObject",
+        JSON.stringify({ urlValue: url })
+      );
+      window.location.reload();
+    }}
+  >
+    {url}
+  </button>
+
+  )
 }
 
 export default App;

@@ -12,3 +12,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+input{
+  padding: 5px;
+  border-radius: 13px;
+  outline: none;
+}

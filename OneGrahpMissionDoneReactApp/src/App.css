@@ -1,11 +1,47 @@
-.graphiql-container {
-  height: 100vh;
-  width: 100vw;
+.websiteTitle{
+  color: darkcyan;
+  font-size: 6rem;
 }
-button,
+a,a:active, a:visited{
+  color: darkcyan;
+
+}
+.mainContainer{
+  height: 1800px;
+  width: 1000px;
+  padding: 40px;
+  /* border-radius: 20px; */
+  /* border: 2px solid; */
+  /* margin: 40px; */
+}
+.graphiql-container {
+  height: 1000px;
+  width: 1000px;
+  border: 0.1px solid black;
+  border-radius: 20px;
+  /* padding: 85px; */
+  /* margin: 10px; */
+  /* height: 100vh; */
+  /* width: 100vw; */
+}
+.resetButton,
+.UsePublicGraphql,
 .inputSubmitButton {
   margin: 4px;
   padding: 4px;
   border-radius: 15px;
   outline: none;
+}
+.UsePublicGraphql{
+  border: 2px solid darkcyan;
+  background-color: lightcyan;
+}
+h1,h2,h3{
+  color: darkcyan
+}
+strong{
+  color: darkseagreen
+}
+.myGraphqlInputSahil{
+  width: 330px; 
 }
