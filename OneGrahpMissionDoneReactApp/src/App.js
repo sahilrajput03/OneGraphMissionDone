@@ -278,11 +278,14 @@ class App extends Component<{}, State> {
         <UsePublicGraphql url="https://graphql-weather-api.herokuapp.com/" />
       {/* <UsePublicGraphql url="" /> */}
       <hr/>
-      Created by <a href="https://twitter.com/freakstarrocks">Sahil Rajput</a>
       <br/>
-      Resources used: <a href="https://github.com/OneGraph/graphiql-explorer-example">One Graph's Client</a>
-      
-          
+      Resources used: <a href="https://github.com/OneGraph/graphiql-explorer-example">One Graph's Client</a><br/>
+      Code @ github: <a href="https://github.com/sahilrajput03/OneGraphMissionDone">OneGraphMissionDone Repository</a>
+      <br/>If you wish to add something(anything), you may create a pull request on github.<br/>
+      <br/>
+      Thanks.😉 
+      <br/>
+      Created by <a href="https://twitter.com/freakstarrocks">Sahil Rajput</a>
   </div>
     );
   }
