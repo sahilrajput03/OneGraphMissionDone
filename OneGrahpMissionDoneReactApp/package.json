@@ -12,11 +12,11 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "react-scripts build",
+		"buildDeploy": "react-scripts build && cp -r build/* ../",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"flow": "flow",
-		"deploy": "gh-pages -d build",
+		"deploy_I_dont_need_this": "gh-pages -d build",
 		"predeploy": "yarn build",
 		"prettier": "prettier --write \"src/**/*.js\" \"docs/**/*.md\" README.md"
 	},

@@ -89,6 +89,7 @@ class App extends Component<{}, State> {
     let retrivedObject = localStorage.getItem("testObject");
     let { urlValue } = JSON.parse(retrivedObject);
     console.log("Submitted: testObject.urlValue => ", urlValue);
+    document.documentElement.scrollTop = 0;
     window.location.reload(); /* This is magic!! */
 
     event.preventDefault();
@@ -249,6 +250,7 @@ class App extends Component<{}, State> {
               "testObject",
               JSON.stringify({ urlValue: initialUrl })
             );
+            document.documentElement.scrollTop = 0;
             window.location.reload();
           }}
         >
@@ -295,6 +297,7 @@ const UsePublicGraphql = ({url}) => {
         "testObject",
         JSON.stringify({ urlValue: url })
       );
+      document.documentElement.scrollTop = 0;/* This is amazing! */
       window.location.reload();
     }}
   >
