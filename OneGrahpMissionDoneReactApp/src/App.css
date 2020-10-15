@@ -1,12 +1,13 @@
-.websiteTitle{
+.websiteTitle {
   color: darkcyan;
   font-size: 6rem;
 }
-a,a:active, a:visited{
+a,
+a:active,
+a:visited {
   color: darkcyan;
-
 }
-.mainContainer{
+.mainContainer {
   height: 1800px;
   width: 1000px;
   padding: 40px;
@@ -16,9 +17,10 @@ a,a:active, a:visited{
 }
 .graphiql-container {
   height: 1000px;
-  width: 1000px;
+  width: 1470px;
   border: 0.1px solid black;
   border-radius: 20px;
+  /* width: 1470px; */
   /* padding: 85px; */
   /* margin: 10px; */
   /* height: 100vh; */
@@ -32,16 +34,18 @@ a,a:active, a:visited{
   border-radius: 15px;
   outline: none;
 }
-.UsePublicGraphql{
+.UsePublicGraphql {
   border: 2px solid darkcyan;
   background-color: lightcyan;
 }
-h1,h2,h3{
-  color: darkcyan
+h1,
+h2,
+h3 {
+  color: darkcyan;
 }
-strong{
-  color: darkseagreen
+strong {
+  color: darkseagreen;
 }
-.myGraphqlInputSahil{
-  width: 330px; 
+.myGraphqlInputSahil {
+  width: 330px;
 }
