@@ -2,6 +2,7 @@
 
 1. I installed the deps via `npm i --legacy-peer-deps` because `npm i` showed error can't resolve dependency tree for some dependency.
 2. Also, I create .nvmrc file as well.
+3. Now the build is not getting generated so leave this project alone in HELL! ✅❤️
 
 ---
 
